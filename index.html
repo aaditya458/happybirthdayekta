@@ -639,7 +639,7 @@ let ALL_PHOTOS = [...US_PHOTOS,...HER_PHOTOS,...FAMILY_PHOTOS];
 // If you know exactly how many slideshow files exist (135 onward), set this
 // to skip auto-detection entirely for instant, lag-free startup.
 // Set to 0 to fall back to auto-detection (slower with many files).
-const SLIDESHOW_COUNT = 570;
+const SLIDESHOW_COUNT = 436;
 
 let SLIDESHOW_PHOTOS = [];
 const CAPS = [
@@ -1019,11 +1019,23 @@ function buildAll(){
   buildMood();initMemory();drawWheel();loadWYR();initQuiz();
   if(SLIDESHOW_COUNT>0){
     const indices=Array.from({length:SLIDESHOW_COUNT},(_,i)=>i+135);
-    // Resolve all images upfront so every photo plays in the slideshow
-    Promise.all(indices.map(idx=>resolveSlideshowItem(idx))).then(items=>{
-      SLIDESHOW_PHOTOS = items.filter(Boolean);
+    // Resolve first 30 immediately so slideshow can start fast
+    const head=indices.slice(0,30);
+    const tail=indices.slice(30);
+    Promise.all(head.map(idx=>resolveSlideshowItem(idx))).then(headItems=>{
+      SLIDESHOW_PHOTOS = headItems.filter(Boolean);
       if(!SLIDESHOW_PHOTOS.length) SLIDESHOW_PHOTOS=["photo/image_135.png"];
       ssInit();
+      // resolve the rest in background, append as they're found
+      Promise.all(tail.map(idx=>resolveSlideshowItem(idx))).then(tailItems=>{
+        tailItems.filter(Boolean).forEach(item=>{
+          SLIDESHOW_PHOTOS.push(item);
+          ssPhotos.push(item); // also add to the active slideshow queue so all photos actually play
+        });
+        // update counter to reflect true total
+        const s=ssPhotos[ssIdx];
+        document.getElementById("ss-counter").textContent=`${isVideo(s)?"🎬 Video":"Photo"} ${ssIdx+1} of ${ssPhotos.length}`;
+      });
     });
   } else {
     detectSlideshowMedia().then(media=>{
