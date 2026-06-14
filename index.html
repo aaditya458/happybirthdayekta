@@ -24,8 +24,7 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 @keyframes blink{50%{border-color:transparent}}
 @keyframes glow{0%,100%{box-shadow:0 0 20px rgba(233,30,140,.12)}50%{box-shadow:0 0 48px rgba(233,30,140,.28)}}
 
-
-/* ── SPLASH ── */
+/* SPLASH */
 #splash{position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#fff5f8,#fce4ec,#f3e8ff);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .9s,transform .9s}
 #splash.out{opacity:0;transform:scale(1.06);pointer-events:none}
 #gift-box{font-size:7rem;cursor:pointer;animation:float 2s ease infinite;transition:.2s;filter:drop-shadow(0 8px 24px rgba(233,30,140,.25))}
@@ -33,7 +32,7 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .splash-title{font-family:"Montserrat",sans-serif;font-size:clamp(1.5rem,5vw,2.4rem);color:var(--pk);text-align:center;animation:fadeUp .8s .4s ease both}
 .splash-sub{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--t2);animation:fadeUp .8s .7s ease both}
 
-/* ── RING MODAL ── */
+/* RING MODAL */
 #ring-modal{position:fixed;inset:0;z-index:99998;background:linear-gradient(135deg,#fff5f8,#fce4ec,#f3e8ff);display:none;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
 #ring-modal.show{display:flex}
 .ring-stage{display:none;flex-direction:column;align-items:center;gap:16px;animation:fadeUp .5s ease}
@@ -50,19 +49,19 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .rm-subtitle{font-size:.88rem;color:var(--t2);max-width:320px}
 .rm-card{background:#fff;border:1.5px solid rgba(233,30,140,.2);border-radius:18px;padding:18px 22px;max-width:340px;font-size:.9rem;color:var(--text);line-height:1.75}
 
-/* ── NAVBAR ── */
+/* NAVBAR */
 #navbar{display:none;position:fixed;top:0;left:0;right:0;z-index:9000;background:rgba(255,245,248,.97);backdrop-filter:blur(20px);border-bottom:2px solid rgba(233,30,140,.1);padding:10px 8px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 #navbar::-webkit-scrollbar{display:none}
 .nb-btn{background:transparent;color:var(--t2);border:1.5px solid rgba(233,30,140,.2);padding:8px 14px;margin:0 3px;border-radius:99px;font-size:11.5px;font-weight:600;font-family:"Poppins",sans-serif;transition:.2s;white-space:nowrap}
 .nb-btn:hover,.nb-btn.active{background:linear-gradient(135deg,var(--pk),var(--pkm));color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(233,30,140,.3);transform:scale(1.05)}
 
-/* ── APP ── */
+/* APP */
 #app{display:none;margin-top:66px;padding-bottom:80px}
 .page{display:none;animation:fadeUp .45s ease}
 .page.active{display:block}
 .inner{max-width:960px;margin:0 auto;padding:20px 14px}
 
-/* ── SHARED ── */
+/* SHARED */
 .card{background:var(--bg2);border:1.5px solid rgba(233,30,140,.12);border-radius:20px;padding:22px;margin:14px 0;box-shadow:0 4px 22px rgba(233,30,140,.06)}
 .card-pink{background:linear-gradient(135deg,#fdf2f8,#fff5f8);border-color:rgba(233,30,140,.2)}
 .card-glow{animation:glow 4s ease infinite}
@@ -85,20 +84,20 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .center{text-align:center}
 .p2{color:var(--t2);font-size:.88rem;line-height:1.7}
 
-/* ── COUNTDOWN ── */
+/* COUNTDOWN */
 .cd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .cd-unit{background:var(--pkl);border:1.5px solid rgba(233,30,140,.2);border-radius:14px;padding:14px 6px;text-align:center}
 .cd-n{font-family:"Montserrat",sans-serif;font-size:clamp(1.8rem,5vw,2.6rem);color:var(--pk);display:block;line-height:1}
 .cd-l{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--t2);margin-top:4px;display:block}
 
-/* ── PERSONALITY CARDS ── */
+/* PERSONALITY CARDS */
 .pers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
 .pers-card{background:var(--bg2);border:1.5px solid rgba(233,30,140,.12);border-radius:18px;padding:20px;text-align:center;transition:.25s;box-shadow:0 4px 18px rgba(233,30,140,.05)}
 .pers-card:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(233,30,140,.14);border-color:rgba(233,30,140,.3)}
 .pers-ico{font-size:2.4rem;display:block;margin-bottom:10px;animation:float 3s ease infinite}
 .pers-title{font-size:.95rem;font-weight:700;color:var(--pk);margin-bottom:6px}
 .pers-desc{font-size:.78rem;color:var(--t2);line-height:1.65}
-/* ── TIMELINE ── */
+/* TIMELINE */
 .tl{position:relative;padding-left:32px}
 .tl::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--pk),var(--lav),var(--gld))}
 .tl-item{position:relative;margin-bottom:28px;animation:fadeUp .5s ease both}
@@ -107,7 +106,7 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .tl-title{font-size:1rem;font-weight:700;color:var(--pk);margin-bottom:4px}
 .tl-text{font-size:.84rem;color:var(--t2);line-height:1.65}
 
-/* ── CAKE ── */
+/* CAKE */
 .candle-row{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-bottom:12px;max-width:420px;margin-left:auto;margin-right:auto}
 .candle{display:flex;flex-direction:column;align-items:center;cursor:pointer;transition:.2s}
 .candle:hover{transform:scale(1.1)}
@@ -115,14 +114,14 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .candle-body{width:11px;height:28px;background:linear-gradient(135deg,var(--pkm),var(--lav));border-radius:3px;box-shadow:0 0 8px rgba(233,30,140,.25)}
 .candle.blown .flame{opacity:0;transform:scale(0)}
 
-/* ── SCRATCH ── */
+/* SCRATCH */
 .sc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px}
 .sc-card{position:relative;background:linear-gradient(135deg,var(--pk),var(--lav));border-radius:16px;overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
-.sc-cover{position:absolute;inset:0;background:var(--bg3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;border-radius:16px;border:1.5px solid rgba(233,30,140,.2);cursor:pointer;transition:opacity .4s,transform .4s}
+.sc-cover{position:absolute;inset:0;background:var(--bg3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;border-radius:16px;border:1.5px solid rgba(233,30,140,.2);cursor:pointer;transition:opacity .4s,transform .4s;z-index:2}
 .sc-cover.gone{opacity:0;transform:scale(1.1);pointer-events:none}
-.sc-msg{padding:12px;text-align:center;font-family:"Montserrat",sans-serif;font-size:1rem;color:var(--text);line-height:1.5;z-index:1}
+.sc-msg{padding:12px;text-align:center;font-family:"Montserrat",sans-serif;font-size:1rem;color:var(--text);line-height:1.5;z-index:1;position:relative}
 
-/* ── MEMORY ── */
+/* MEMORY */
 .mem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:420px;margin:0 auto}
 .mem-card{aspect-ratio:3/4;border-radius:12px;cursor:pointer;position:relative;transform-style:preserve-3d;transition:transform .42s;border:1.5px solid rgba(233,30,140,.15)}
 .mem-card.flipped{transform:rotateY(180deg)}
@@ -132,7 +131,7 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 .mem-back{transform:rotateY(180deg)}
 .mem-back img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 
-/* ── MOOD ── */
+/* MOOD */
 .mood-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(108px,1fr));gap:10px}
 .mood-btn{background:var(--bg2);border:1.5px solid rgba(233,30,140,.15);border-radius:14px;padding:15px 8px;text-align:center;cursor:pointer;transition:.2s}
 .mood-btn:hover{transform:scale(1.04);border-color:rgba(233,30,140,.4)}
@@ -142,31 +141,31 @@ body{background:var(--bg);color:var(--text);font-family:"Poppins",sans-serif;ove
 #mood-result{background:var(--pkl);border:1.5px solid rgba(233,30,140,.25);border-radius:18px;padding:20px;display:none;animation:popIn .4s ease;margin-top:14px}
 #mood-result.show{display:block}
 
-/* ── CONFESS ── */
+/* CONFESS */
 .confess-box{background:linear-gradient(135deg,var(--pkl),#f3e8ff);border:1.5px solid rgba(233,30,140,.2);border-radius:18px;padding:22px}
 input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 .confess-disp{min-height:70px;display:flex;align-items:center;justify-content:center;font-family:"Montserrat",sans-serif;font-size:1.3rem;color:var(--text);text-align:center;line-height:1.55}
 
-/* ── COMPLIMENT ── */
+/* COMPLIMENT */
 .comp-machine{background:var(--pkl);border:1.5px solid rgba(233,30,140,.2);border-radius:22px;padding:28px;text-align:center}
 .comp-disp{font-family:"Montserrat",sans-serif;font-size:clamp(1.1rem,3.5vw,1.6rem);color:var(--text);min-height:70px;display:flex;align-items:center;justify-content:center;transition:opacity .3s;line-height:1.5}
 
-/* ── REASONS ── */
+/* REASONS */
 .reason-num{font-family:"Montserrat",sans-serif;font-size:5.5rem;color:var(--pk);display:block;line-height:1;animation:heartbeat 1.5s ease infinite}
 .reason-txt{font-size:.95rem;color:var(--t2);min-height:48px;display:flex;align-items:center;justify-content:center;padding:0 12px;text-align:center}
 
-/* ── GALLERY ── */
+/* GALLERY */
 .masonry{columns:2;gap:10px}
 @media(min-width:520px){.masonry{columns:3}}
 @media(min-width:800px){.masonry{columns:4}}
-.ph-item{break-inside:avoid;margin-bottom:10px;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;border:1.5px solid rgba(233,30,140,.08);transition:transform .2s,box-shadow .2s}
+.ph-item{break-inside:avoid;margin-bottom:10px;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;border:1.5px solid rgba(233,30,140,.08);transition:transform .2s,box-shadow .2s;background:#fdf2f8}
 .ph-item:hover{transform:scale(1.02);box-shadow:0 10px 28px rgba(233,30,140,.16);z-index:2}
-.ph-item img{width:100%;display:block;object-fit:cover;object-position:center top}
+.ph-item img{width:100%;display:block;object-fit:cover;object-position:center top;min-height:120px;}
 .ph-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(74,25,66,.55),transparent 50%);opacity:0;transition:opacity .2s;display:flex;align-items:flex-end;padding:10px}
 .ph-item:hover .ph-ov{opacity:1}
 .ph-cap{font-size:11px;color:rgba(255,255,255,.9);font-style:italic}
 
-/* ── LIGHTBOX ── */
+/* LIGHTBOX */
 #lightbox{position:fixed;inset:0;background:rgba(74,25,66,.96);z-index:98000;display:none;align-items:center;justify-content:center;padding:20px}
 #lightbox.show{display:flex}
 #lb-img{max-width:100%;max-height:88vh;border-radius:14px;object-fit:contain}
@@ -174,7 +173,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 #lb-prev,#lb-next{position:absolute;top:50%;transform:translateY(-50%);font-size:32px;color:#fff;background:rgba(255,255,255,.08);border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer}
 #lb-prev{left:8px}#lb-next{right:8px}
 
-/* ── STRIP ── */
+/* STRIP */
 .strip-sel{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
 .strip-thumb{aspect-ratio:3/4;border-radius:10px;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:.2s}
 .strip-thumb.picked{border-color:var(--pk);box-shadow:0 0 14px rgba(233,30,140,.3)}
@@ -183,10 +182,10 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 .strip-frame{border-radius:4px;overflow:hidden;aspect-ratio:3/4}
 .strip-frame img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* ── SPIN WHEEL ── */
+/* SPIN WHEEL */
 #wheel-canvas{border-radius:50%;border:4px solid rgba(233,30,140,.2);box-shadow:0 0 36px rgba(233,30,140,.1);display:block;margin:0 auto;max-width:280px;width:100%}
 
-/* ── WYR ── */
+/* WYR */
 .wyr-q{font-family:"Montserrat",sans-serif;font-size:1.5rem;color:var(--text);text-align:center;margin:14px 0 20px;line-height:1.45}
 .wyr-opt{background:var(--bg2);border:2px solid rgba(233,30,140,.15);border-radius:16px;padding:16px 18px;font-size:.93rem;font-weight:600;font-family:"Poppins",sans-serif;color:var(--text);text-align:center;transition:.2s;width:100%;margin:5px 0;cursor:pointer}
 .wyr-opt:hover{border-color:var(--pkm);background:var(--pkl)}
@@ -194,7 +193,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 .wyr-bar{height:4px;background:linear-gradient(90deg,var(--pk),var(--pkm));border-radius:99px;margin-top:7px;transition:width .6s;width:0}
 .wyr-pct{font-size:10px;color:var(--t2);text-align:right;margin-top:2px}
 
-/* ── QUIZ ── */
+/* QUIZ */
 .q-prog{height:5px;background:rgba(233,30,140,.1);border-radius:99px;margin-bottom:14px;overflow:hidden}
 .q-fill{height:100%;background:linear-gradient(90deg,var(--pk),var(--gld));border-radius:99px;transition:width .4s}
 .q-q{font-family:"Montserrat",sans-serif;font-size:1.4rem;color:var(--text);text-align:center;margin:12px 0 18px;line-height:1.4}
@@ -205,9 +204,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 .q-opt.disabled{pointer-events:none}
 .q-emoji{text-align:center;font-size:3rem;margin:8px 0;min-height:52px;display:flex;align-items:center;justify-content:center}
 
-/* ── VAULT ── */
-
-/* ── BUCKET ── */
+/* BUCKET */
 .bc-card{background:var(--bg2);border:1.5px solid rgba(233,30,140,.12);border-radius:16px;padding:15px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:.2s;box-shadow:0 3px 14px rgba(233,30,140,.04)}
 .bc-card:hover{transform:translateY(-4px);border-color:rgba(233,30,140,.32);box-shadow:0 10px 26px rgba(233,30,140,.1)}
 .bc-card.done{border-color:rgba(5,150,105,.4);background:rgba(5,150,105,.04)}
@@ -217,15 +214,16 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 .bc-chk{margin-left:auto;font-size:1rem;opacity:.18;flex-shrink:0}
 .bc-card.done .bc-chk{opacity:1;color:var(--mint)}
 
-/* ── BALLOON ── */
+/* BALLOON */
 .balloon{position:fixed;cursor:pointer;z-index:8000;width:48px;height:62px;border-radius:50% 50% 50% 50%/42% 42% 58% 58%;box-shadow:inset -5px -5px 10px rgba(0,0,0,.12);animation:balloonUp linear forwards}
 .balloon::after{content:"";position:absolute;width:1px;height:38px;background:rgba(74,25,66,.2);bottom:-38px;left:23px}
 
-/* ── DIAL ── */
+/* DIAL */
 .dial-key{background:var(--bg2);border:1.5px solid rgba(233,30,140,.2);border-radius:12px;padding:12px;font-size:1.2rem;font-weight:700;color:var(--text);font-family:"Poppins",sans-serif;cursor:pointer;transition:.15s}
 .dial-key:hover{background:var(--pkl);border-color:var(--pk);transform:scale(1.08)}
 .dial-key:active{transform:scale(.95)}
-/* ── SLIDESHOW ── */
+
+/* SLIDESHOW */
 #slideshow-wrap{position:relative;width:100%;max-width:480px;margin:0 auto;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:#111;box-shadow:0 16px 48px rgba(74,25,66,.25)}
 #slideshow-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
 #slideshow-wrap img.ss-active{opacity:1}
@@ -245,11 +243,9 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </head>
 <body>
 
-<!-- ══ AUDIO ══ -->
 <audio id="bg-music" src="audio/nihita.mp3" loop preload="auto"></audio>
 <button id="music-toggle" onclick="toggleMusic()" style="position:fixed;bottom:18px;right:18px;z-index:9500;background:linear-gradient(135deg,var(--pk),var(--pkm));color:#fff;border:none;width:50px;height:50px;border-radius:50%;font-size:1.4rem;box-shadow:0 4px 16px rgba(233,30,140,.3);display:none;align-items:center;justify-content:center;cursor:pointer">🔇</button>
 
-<!-- ══ SPLASH ══ -->
 <div id="splash">
   <div id="lock-view">
     <div class="splash-title ds">💕 Something special is coming for Princess Ekta 💕</div>
@@ -266,7 +262,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   <div class="splash-sub" id="gift-sub" style="display:none">✦ something beautiful is waiting inside ✦</div>
 </div>
 
-<!-- ══ RING MODAL ══ -->
 <div id="ring-modal">
   <button onclick="closeRingModal()" style="position:absolute;top:16px;right:16px;background:rgba(233,30,140,.12);border:none;border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--pk)">✕</button>
   <div class="ring-stage active" id="rs1">
@@ -283,7 +278,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   <div class="ring-stage" id="rs2">
     <h2 class="ds" style="font-size:1.8rem;color:var(--pk);">Look what's inside ✨</h2>
     <div style="font-size:5.5rem;animation:float 1.5s ease infinite,popIn .5s ease;margin:10px 0;">💍</div>
-    <div class="rm-card">A diamond and silver ring — just for you, Redina.<br>A small piece of forever, worn on your hand. 💕</div>
+    <div class="rm-card">A diamond and silver ring, just for you, Redina.<br>A small piece of forever, worn on your hand. 💕</div>
     <button class="btn" onclick="showWear()" style="margin-top:6px;">Click to wear it 💍</button>
   </div>
   <div class="ring-stage" id="rs3">
@@ -297,7 +292,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   </div>
 </div>
 
-<!-- ══ LIGHTBOX ══ -->
 <div id="lightbox" onclick="lbBg(event)">
   <div id="lb-close" onclick="closeLb()">×</div>
   <div id="lb-prev" onclick="lbNav(-1)">‹</div>
@@ -305,7 +299,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   <div id="lb-next" onclick="lbNav(1)">›</div>
 </div>
 
-<!-- ══ NAVBAR ══ -->
 <nav id="navbar">
   <button class="nb-btn active" onclick="go('home',this)">🏠 Home</button>
   <button class="nb-btn" onclick="go('about',this)">✨ Princess Ekta 💕</button>
@@ -321,7 +314,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 
 <div id="app">
 
-<!-- ════════════════ HOME ════════════════ -->
 <div id="home" class="page active">
 <div class="inner">
   <div class="card card-glow card-pink" style="text-align:center;padding:36px 20px;position:relative;overflow:hidden">
@@ -359,7 +351,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   </div>
 
   <div class="card" style="text-align:center">
-    <span class="eyebrow">🎤 a voice note — just for you</span>
+    <span class="eyebrow">🎤 a voice note, just for you</span>
     <p class="p2" style="margin-bottom:14px">Press play. This one's from me to you. 💕</p>
     <div style="background:linear-gradient(135deg,var(--pkl),#f3e8ff);border-radius:16px;padding:20px;max-width:400px;margin:0 auto;border:1.5px solid rgba(233,30,140,.2)">
       <div style="font-size:3rem;margin-bottom:10px;animation:heartbeat 1.5s ease infinite">🎤</div>
@@ -367,34 +359,32 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
         <source src="audio/voicenote_1.mp3" type="audio/mpeg">
         Your browser does not support audio.
       </audio>
-      <p class="ds" style="font-size:1.1rem;color:var(--pk);margin-top:10px">— aaditya 💕</p>
+      <p class="ds" style="font-size:1.1rem;color:var(--pk);margin-top:10px">- aaditya 💕</p>
     </div>
   </div>
 
   <div class="card">
-    <span class="eyebrow">🎵 our song — nihita by john chamling rai</span>
+    <span class="eyebrow">🎵 our song, nihita by john chamling rai</span>
     <div style="background:linear-gradient(135deg,var(--pkl),#f3e8ff);border-radius:16px;padding:20px;margin-top:12px;border:1.5px solid rgba(233,30,140,.2);text-align:center">
       <div style="font-size:2.5rem;margin-bottom:10px;animation:heartbeat 2s ease infinite">🎵</div>
       <audio controls style="width:100%;accent-color:var(--pk);border-radius:8px;outline:none;margin-bottom:8px" onplay="spawn(['🎵','💕','🌸'],12,1200)">
         <source src="audio/nihita.mp3" type="audio/mpeg">
       </audio>
-      <p class="p2" style="font-size:.8rem;opacity:.6">nihita — john chamling rai 💕</p>
+      <p class="p2" style="font-size:.8rem;opacity:.6">nihita, john chamling rai 💕</p>
     </div>
   </div>
 </div>
 </div>
 
-<!-- ════════════════ SHE IS EKTA ════════════════ -->
 <div id="about" class="page">
 <div class="inner">
   <h2 class="title-xl ds">Princess Ekta 💕 Gurung ✨</h2>
-  <p class="center p2" style="margin-bottom:20px">Not a love story about me. A celebration of her — in all her beautiful, chaotic, extraordinary glory.</p>
+  <p class="center p2" style="margin-bottom:20px">Not a love story about me. A celebration of her, in all her beautiful, chaotic, extraordinary glory.</p>
   <div class="pers-grid" id="pers-grid"></div>
 
 </div>
 </div>
 
-<!-- ════════════════ CAKE ════════════════ -->
 <div id="cake" class="page">
 <div class="inner center">
   <h2 class="title-xl ds">Make a Wish! 🎂</h2>
@@ -417,7 +407,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </div>
 </div>
 
-<!-- ════════════════ GAMES ════════════════ -->
 <div id="games" class="page">
 <div class="inner">
   <h2 class="title-xl ds">The Arcade 🎮</h2>
@@ -460,7 +449,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   </div>
 
   <div class="card" style="text-align:center">
-    <span class="eyebrow">memory match 🃏 — flips: <span id="flip-c" style="color:var(--pk);font-weight:700">0</span> | matches: <span id="match-c" style="color:var(--mint);font-weight:700">0</span>/6</span>
+    <span class="eyebrow">memory match 🃏, flips: <span id="flip-c" style="color:var(--pk);font-weight:700">0</span> | matches: <span id="match-c" style="color:var(--mint);font-weight:700">0</span>/6</span>
     <div class="mem-grid" id="mem-grid" style="margin-top:16px"></div>
     <button class="btn btn-sm" style="margin-top:14px" onclick="initMemory()">🔀 Shuffle</button>
   </div>
@@ -480,7 +469,7 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
   </div>
 
   <div class="card">
-    <span class="eyebrow">ekta trivia quiz 🧠 — <span id="q-ctr" style="color:var(--pk)">1/8</span></span>
+    <span class="eyebrow">ekta trivia quiz 🧠, <span id="q-ctr" style="color:var(--pk)">1/8</span></span>
     <div id="q-active">
       <div class="q-prog"><div class="q-fill" id="q-fill" style="width:0%"></div></div>
       <div class="q-emoji" id="q-emj">🎂</div>
@@ -497,13 +486,12 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </div>
 </div>
 
-<!-- ════════════════ VIBES ════════════════ -->
 <div id="vibes" class="page">
 <div class="inner">
   <h2 class="title-xl ds">Mood & Confessions 💭</h2>
 
   <div class="card">
-    <span class="eyebrow">mood ring 🌈 — how are you feeling today?</span>
+    <span class="eyebrow">mood ring 🌈, how are you feeling today?</span>
     <div class="mood-grid" id="mood-grid" style="margin-top:14px;max-width:600px;margin-left:auto;margin-right:auto"></div>
     <div id="mood-result"></div>
   </div>
@@ -539,7 +527,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </div>
 </div>
 
-<!-- ════════════════ GALLERY ════════════════ -->
 <div id="gallery" class="page">
 <div class="inner">
   <h2 class="title-xl ds">Our Moments 📸</h2>
@@ -555,26 +542,24 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
     </div>
     <div id="strip-result" style="display:none;margin-top:14px">
       <div id="strip-frames"></div>
-      <p class="ds" style="font-size:1.1rem;color:var(--pk);margin-top:6px">~ our moments ~</p>
+      <p class="ds" style="font-size:1.1rem;color:var(--pk);margin-top:6px">our moments</p>
     </div>
   </div>
 </div>
 </div>
 
-<!-- ════════════════ LOVE ════════════════ -->
 <div id="love" class="page">
 <div class="inner">
   <h2 class="title-xl ds">Wall of Love 💌</h2>
   <p class="center p2" style="margin-bottom:16px">Tap each card to scratch and reveal a secret message 🎁</p>
   <div class="sc-grid" id="sc-grid"></div>
   <div class="card" style="margin-top:16px">
-    <span class="eyebrow">compliment wall — tap each one! ✨</span>
+    <span class="eyebrow">compliment wall, tap each one! ✨</span>
     <div class="grid4" id="comp-wall" style="margin-top:14px"></div>
   </div>
 </div>
 </div>
 
-<!-- ════════════════ BUCKET LIST ════════════════ -->
 <div id="bucket" class="page">
 <div class="inner">
   <h2 class="title-xl ds">Things I Want to Do With You 🌍</h2>
@@ -583,7 +568,6 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </div>
 </div>
 
-<!-- ════════════════ SURPRISE ════════════════ -->
 <div id="surprise" class="page">
 <div class="inner center">
   <h2 class="title-xl ds">The Final Surprise 💍</h2>
@@ -592,14 +576,11 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
     <span class="eyebrow">your ring box is waiting</span>
     <div style="font-size:4rem;margin:14px 0;animation:float 2s ease infinite">💍</div>
     <p class="ds" style="font-size:1.4rem;color:var(--pk);margin-bottom:8px">The Ring 💍</p>
-    <p class="p2">Tap here to open your ring box again — anytime you want to feel it. 💕</p>
+    <p class="p2">Tap here to open your ring box again, anytime you want to feel it. 💕</p>
   </div>
-
-  <!-- love letter removed -->
 </div>
 </div>
 
-<!-- ════════════════ SLIDESHOW ════════════════ -->
 <div id="slideshow" class="page">
 <div class="inner center">
   <h2 class="title-xl ds">Her World 📽</h2>
@@ -623,25 +604,25 @@ input[type=range]{width:100%;accent-color:var(--pk);margin:12px 0}
 </div>
 </div>
 
-</div><!-- /app -->
+</div><script>
+// ==========================================
+// DATA & OPTIMIZATION FIXES
+// ==========================================
+const TOTAL_IMAGES = 570;
+// We now generate all images instantly to stop load delays
+const ALL_PHOTOS = Array.from({length: TOTAL_IMAGES}, (_, i) => `photo/image_${i+1}.png`);
 
-<script>
-// ══════════════════════════════════════════
-//  DATA
-// ══════════════════════════════════════════
-let US_PHOTOS = Array.from({length:20},(_,i)=>`photo/image_${i+1}.png`);
-let HER_PHOTOS = Array.from({length:94},(_,i)=>`photo/image_${i+21}.png`);
-let FAMILY_PHOTOS = Array.from({length:20},(_,i)=>`photo/image_${i+115}.png`);
-let ALL_PHOTOS = [...US_PHOTOS,...HER_PHOTOS,...FAMILY_PHOTOS];
-// Slideshow photos are detected dynamically at runtime starting from image_135.png
-// (see detectSlideshowMedia below) so this list grows/shrinks automatically
-// based on how many images actually exist in the images/ folder.
-// If you know exactly how many slideshow files exist (135 onward), set this
-// to skip auto-detection entirely for instant, lag-free startup.
-// Set to 0 to fall back to auto-detection (slower with many files).
-const SLIDESHOW_COUNT = 436;
+// TRUE Fisher-Yates shuffle function for real randomness
+function shuffle(array) {
+  let cur = array.length, rnd;
+  while (cur !== 0) {
+    rnd = Math.floor(Math.random() * cur);
+    cur--;
+    [array[cur], array[rnd]] = [array[rnd], array[cur]];
+  }
+  return array;
+}
 
-let SLIDESHOW_PHOTOS = [];
 const CAPS = [
   "late night calls 🌙","sleepy & cute 😴","just being us ✨","you're gorgeous 💖",
   "close-up queen 👸","pout face 🥺","the best laugh 😂","outfit check ✅",
@@ -651,12 +632,12 @@ const CAPS = [
   "chaotic beautiful 💕","she chose me first 🫶","her world 🌸","dog mom energy 🐶",
   "family girl 💕","the fam 🫂","love of her life (the dog) 🐾","her people 💛",
   "home girl 🏡","squad 💕","her chaos crew 🌸","mom's girl 💕",
-  ...Array.from({length:68},(_,i)=>`moment #${i+33} 💕`)
+  ...Array.from({length:538},(_,i)=>`moment #${i+33} 💕`)
 ];
 
 const CONFESSIONS = [
   "I stalk all our photos and your Instagram every single time I miss you... which is basically always.",
-  "I sometimes say goodnight first on purpose — just so you'll call me back faster.",
+  "I sometimes say goodnight first on purpose, just so you'll call me back faster.",
   "I call you before I even reach the meeting spot so you come out on time. I still end up waiting 10 to 20 minutes every time.",
   "I screenshot and save every photo you post without telling you. I just really, really love your face.",
   "I hate you.",
@@ -672,16 +653,6 @@ const PERSONALITY = [
   {ico:"👓",title:"The Face",desc:"Glasses. Nose ring. Getting more beautiful with every passing month. She has incredible taste in lenses and somehow looks better in every photo."},
   {ico:"🚬",title:"The One Thing",desc:"I hate it. Not a little. Genuinely, completely hate it. You know it. I want you around for a very long time. Please."},
   {ico:"💪",title:"Gym Since May 25, 2026",desc:"She decided. She showed up. She kept showing up. The results are real and visible and honestly? Absolute applause. 👏 Keep going queen, this one matters."},
-];
-
-const TIMELINE = [
-  {date:"September 13, 2024",title:"The Night It All Started ✨",text:"College orientation day. My 18th birthday. She was 22. And out of nowhere, she texted first — that night, of all nights. I did not know yet that my whole life had just quietly changed direction."},
-  {date:"September 15, 2024",title:"We Finally Met 🫂",text:"Two days later. In person for the first time. Everything I felt over text suddenly became real — and ten times bigger than I was prepared for."},
-  {date:"September 25, 2024",title:"The Breakup 💔",text:"The world briefly ended. For about three dramatic, terrible days. Neither of us was ready for how real it had already become."},
-  {date:"September 28, 2024",title:"She Texted. 'Let's Date Again.' 💕",text:"Three days later she texted. Let's date again. Three words. That was it. I said yes before I even finished reading. This was not going anywhere. This was real."},
-  {date:"May 25, 2026",title:"She Started Going Gym 💪",text:"She set a goal. She showed up. And she has been showing up regularly ever since. The results are beginning to speak for themselves — quietly, impressively, undeniably. Absolute applause. Keep going, seriously. This is one of the best things you have done for yourself and I am watching every bit of it with full pride. 👏"},
-  {date:"June 20, 2025",title:"Her Last Birthday 🧿",text:"A café. Just the two of us. Not full of chaos and fights — just quiet and real and ours. This year let it be something we actually remember. Something bigger. Something worthy of her. 🧿"},
-  {date:"Now",title:"She Is A Demon. I Am Still Fida. 😈💕",text:"She is a demon. She has always been a demon. Breakup threats, silent treatment, full volume shouting, punishing me to death. And I am still completely, embarrassingly, helplessly fida on her. Nothing has changed. Everything has changed. This is just us now and I would not trade a single second of it."},
 ];
 
 const BUCKET = [
@@ -704,13 +675,13 @@ const BUCKET = [
   {ico:"💆",t:"Spa Day",d:"She deserves to be taken care of for a full day. No arguments."},
   {ico:"🎭",t:"A Theatre Show",d:"Get dressed up. Watch her watch something that moves her."},
   {ico:"🏡",t:"Our Own Home",d:"A little place that is entirely ours. Finally, properly home."},
-  {ico:"🌍",t:"Every Country She Wants",d:"Wherever she points on the map — that's where we're going."},
+  {ico:"🌍",t:"Every Country She Wants",d:"Wherever she points on the map, that's where we're going."},
 ];
 
 const SCRATCH_MSGS = [
   {ico:"💖",msg:"You have the most beautiful smile I have ever seen in my entire life."},
   {ico:"🌙",msg:"You make me want to stay up all night just to have more time with you."},
-  {ico:"✨",msg:"Your kindness, your intelligence, your laugh — everything about you is magic."},
+  {ico:"✨",msg:"Your kindness, your intelligence, your laugh, everything about you is magic."},
   {ico:"🌸",msg:"I would choose you in every lifetime, every universe, every version of this story."},
   {ico:"🫀",msg:"I love you so much it is honestly a little ridiculous. Like, embarrassingly much."},
   {ico:"🏠",msg:"You are my home. Wherever you are is exactly where I belong."},
@@ -719,7 +690,7 @@ const SCRATCH_MSGS = [
   {ico:"🌟",msg:"You are not just my girlfriend. You are my absolute favourite person on earth."},
   {ico:"🫂",msg:"I cannot wait to hold you properly for a very long time. Very, very soon."},
   {ico:"🌺",msg:"Every single day with you is genuinely my favourite day. Even the ordinary ones."},
-  {ico:"💫",msg:"You deserve every good thing — every adventure, every laugh, every beautiful moment."},
+  {ico:"💫",msg:"You deserve every good thing, every adventure, every laugh, every beautiful moment."},
 ];
 
 const COMP_WALL = [
@@ -735,12 +706,12 @@ const REASONS = [
   "You texted first. You chose first. That is everything.",
   "The way you look when you are sleepy on FaceTime.",
   "You are rude AND the most caring person I know simultaneously.",
-  "Your big heart — the one you hide but it always shows anyway.",
+  "Your big heart, the one you hide but it always shows anyway.",
   "You punish me to death and I am somehow fine with this.",
   "When you get dressed up, there is no one more beautiful in the world.",
-  "The gym discipline — quietly, impressively showing results.",
-  "You are my mom, my teacher, my chaos, my home — all in one.",
-  "The way she shows up for the people she loves — quietly, completely.",
+  "The gym discipline, quietly, impressively showing results.",
+  "You are my mom, my teacher, my chaos, my home, all in one.",
+  "The way she shows up for the people she loves, quietly, completely.",
   "The nose ring. The glasses. The whole thing.",
   "You feel everything deeply, even if you're too lazy to act on it.",
   "You are a family girl with a heart too big to pretend otherwise.",
@@ -753,7 +724,7 @@ const COMPLIMENTS_LIST = [
   "You are the most beautiful person I have ever seen with my own eyes.",
   "Your laugh could genuinely fix the worst possible day. Every single time.",
   "I am so unreasonably lucky that I actually feel guilty about it.",
-  "You are smarter than you give yourself credit for — always, always.",
+  "You are smarter than you give yourself credit for, always, always.",
   "Every photo of you is somehow my new favourite photo.",
   "Your kindness is one of the rarest things that exists on this earth.",
   "You make everything more beautiful just by being in it.",
@@ -764,13 +735,13 @@ const COMPLIMENTS_LIST = [
   "You have absolutely no idea how much light you actually carry.",
   "Every single thing about you is my favourite thing about you.",
   "You are the reason I believe that really good things are real.",
-  "Getting slimmer, getting more toned, getting more beautiful — I see it.",
+  "Getting slimmer, getting more toned, getting more beautiful, I see it.",
   "You dress better than anyone. No competition. It's not close.",
 ];
 
 const MOODS = [
   {ico:"😊",lbl:"Happy",col:"#ffd700",msg:"You are glowing today! Aaditya says: Your happiness is literally contagious. I need you to know that. Keep shining. 💛"},
-  {ico:"🥰",lbl:"Loved",col:"#f06292",msg:"Good — you should feel this way every second. Aaditya says: You are so deeply loved. By me, by everyone lucky enough to know you. 💕"},
+  {ico:"🥰",lbl:"Loved",col:"#f06292",msg:"Good, you should feel this way every second. Aaditya says: You are so deeply loved. By me, by everyone lucky enough to know you. 💕"},
   {ico:"😴",lbl:"Sleepy",col:"#818cf8",msg:"Rest, my love. Aaditya says: You work so hard. Close your eyes. I will still be here when you wake up. Sleep well, piglettt. 🌙"},
   {ico:"😢",lbl:"Sad",col:"#60c8ff",msg:"I'm coming. Aaditya says: Whatever made you sad today does not deserve one more second of your energy. I wish I could hold you right now. 🤍"},
   {ico:"😤",lbl:"Annoyed",col:"#fb923c",msg:"Completely valid. Aaditya says: Vent to me. All of it. I will listen to every word and then we will watch something funny. 💪"},
@@ -798,15 +769,15 @@ const WYR_QS = [
 ];
 
 const QUIZ_QS = [
-  {q:"Who texted first?",opts:["Aaditya","Ekta 💕","Both at the same time","Nobody — they met in person"],a:1,g:"🥰",gm:"✅ She did! September 13, 2024. She texted first. Always. 💕",bm:"❌ Ekta texted first! On his birthday! 🎂"},
-  {q:"How long does Aaditya wait outside after calling you?",opts:["2 minutes","Instantly","10 to 20 minutes 🕑","He never has to wait"],a:2,g:"😂",gm:"✅ 10-20 minutes. Every single time. No exceptions. He'd wait forever.",bm:"❌ 10-20 minutes — every time! Still worth it 😂"},
+  {q:"Who texted first?",opts:["Aaditya","Ekta 💕","Both at the same time","Nobody, they met in person"],a:1,g:"🥰",gm:"✅ She did! September 13, 2024. She texted first. Always. 💕",bm:"❌ Ekta texted first! On his birthday! 🎂"},
+  {q:"How long does Aaditya wait outside after calling you?",opts:["2 minutes","Instantly","10 to 20 minutes 🕑","He never has to wait"],a:2,g:"😂",gm:"✅ 10-20 minutes. Every single time. No exceptions. He'd wait forever.",bm:"❌ 10-20 minutes, every time! Still worth it 😂"},
   {q:"Where did they go for Ekta's last birthday?",opts:["A restaurant","A café ☕","A park","She doesn't remember"],a:1,g:"☕",gm:"✅ A café. Just the two of them. Simple and real. This year better be bigger! 💕",bm:"❌ A café! Simple and real. This year better be something special! 💕"},
   {q:"What outfit absolutely floored Aaditya?",opts:["All black","Hoodie and jeans","Pink crop top + floral skirt 🌸","White dress"],a:2,g:"💃",gm:"✅ Pink crop top + floral skirt. She SERVED. Speechless.",bm:"❌ Pink crop top + floral skirt! He was speechless! 💗"},
   {q:"When is Ekta's birthday?",opts:["June 15","July 20","June 20 🎂","May 20"],a:2,g:"🎂",gm:"✅ June 20! The most important day of the year! 🎉",bm:"❌ June 20! Today! 🎂"},
   {q:"Aaditya's nickname for Ekta?",opts:["Babe","Love","Piglettt / Pinky 🐷","Cupcake"],a:2,g:"🐷",gm:"✅ Piglettt / Pinky! Nobody else gets these names. Only her. 💕",bm:"❌ Piglettt and Pinky! The only names that matter. 💕"},
   {q:"What are Ekta's iconic accessories?",opts:["Sunglasses always","Earrings only","Glasses + nose ring 👓","Hat and scarf"],a:2,g:"👸",gm:"✅ Glasses + nose ring. Iconic combination. Perfectly her.",bm:"❌ Glasses + nose ring! The iconic combo! 💕"},
-  {q:"How old was Aaditya when Ekta first texted him?",opts:["17","19","20","18 🎂"],a:3,g:"🎉",gm:"✅ 18! It was literally his 18th birthday! Wild timing. 💕",bm:"❌ He was 18 — it was his birthday the night she texted! 🎂"},
-  {q:"Who does Ekta love more — Mom or Dad?",opts:["Dad 👨","Mom 👩","Both equally","Neither (lol)"],a:1,g:"🥰",gm:"✅ Mom! Always Mom. That bond is something else entirely. 💕",bm:"❌ It's Mom! Always has been. 💕"},
+  {q:"How old was Aaditya when Ekta first texted him?",opts:["17","19","20","18 🎂"],a:3,g:"🎉",gm:"✅ 18! It was literally his 18th birthday! Wild timing. 💕",bm:"❌ He was 18, it was his birthday the night she texted! 🎂"},
+  {q:"Who does Ekta love more, Mom or Dad?",opts:["Dad 👨","Mom 👩","Both equally","Neither (lol)"],a:1,g:"🥰",gm:"✅ Mom! Always Mom. That bond is something else entirely. 💕",bm:"❌ It's Mom! Always has been. 💕"},
 ];
 
 const SPIN_DATES = [
@@ -823,9 +794,9 @@ const SPIN_DATES = [
 ];
 
 
-// ══════════════════════════════════════════
-//  SPLASH & RING MODAL
-// ══════════════════════════════════════════
+// ==========================================
+// SPLASH & RING MODAL
+// ==========================================
 function toggleMusic(){
   const m=document.getElementById("bg-music");
   const btn=document.getElementById("music-toggle");
@@ -846,22 +817,7 @@ function openGift(){
   },900);
 }
 
-async function resolveGalleryExtensions(){
-  const resolveArr=async(arr)=>{
-    return Promise.all(arr.map(async src=>{
-      const m=src.match(/image_(\d+)\./);
-      if(!m) return src;
-      const real=await findImageExt(m[1]);
-      return real||src;
-    }));
-  };
-  US_PHOTOS=await resolveArr(US_PHOTOS);
-  HER_PHOTOS=await resolveArr(HER_PHOTOS);
-  FAMILY_PHOTOS=await resolveArr(FAMILY_PHOTOS);
-  ALL_PHOTOS=[...US_PHOTOS,...HER_PHOTOS,...FAMILY_PHOTOS];
-}
-
-async function startApp(){
+function startApp(){
   document.getElementById("navbar").style.display="block";
   document.getElementById("app").style.display="block";
   document.getElementById("music-toggle").style.display="flex";
@@ -869,10 +825,10 @@ async function startApp(){
   m.play().then(()=>{document.getElementById("music-toggle").textContent="🔊";}).catch(()=>{});
   tickCD();setInterval(tickCD,1000);
   spawnBalloons();
-  try{
-    await resolveGalleryExtensions();
-  }catch(e){console.error("gallery resolve failed",e);}
+  
+  // Instant build with zero lag
   buildAll();
+  
   // Check if birthday
   const now=new Date();
   const bday=new Date("2026-06-20T00:00:00");
@@ -911,9 +867,6 @@ function closeRingModal(){
   bigPop("💍 Happy Birthday, Redina! 💕");
 }
 
-// ══════════════════════════════════════════
-//  NAVIGATION
-// ══════════════════════════════════════════
 function go(id,btn){
   document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
   document.getElementById(id).classList.add("active");
@@ -926,12 +879,9 @@ function go(id,btn){
     document.getElementById("ss-play-btn").textContent="⏸ Pause";
     if(ssPhotos.length) ssRunInterval();
   }
-  else{clearInterval(ssInterval);}
+  else{clearTimeout(ssTimer);}
 }
 
-// ══════════════════════════════════════════
-//  COUNTDOWN
-// ══════════════════════════════════════════
 function pad(n){return String(Math.max(0,n)).padStart(2,"0")}
 function tickCD(){
   const t=new Date("2026-06-20T00:00:00").getTime()-Date.now();
@@ -946,9 +896,6 @@ function tickCD(){
   document.getElementById("cd-s").textContent=pad(Math.floor((t%60000)/1000));
 }
 
-// ══════════════════════════════════════════
-//  SHOWERS
-// ══════════════════════════════════════════
 function spawn(ems,count,dur){
   for(let i=0;i<count;i++){
     setTimeout(()=>{
@@ -972,9 +919,6 @@ function bigPop(msg){
   document.body.appendChild(el);setTimeout(()=>el.remove(),2400);
 }
 
-// ══════════════════════════════════════════
-//  BALLOONS
-// ══════════════════════════════════════════
 let popCt=0;
 function spawnBalloons(){
   const cols=["#f06292","#e91e8c","#a855f7","#fbbf24","#60c8ff","#4ade80","#fb923c"];
@@ -993,10 +937,7 @@ function spawnBalloons(){
   setInterval(mkB,3800);
 }
 
-// ══════════════════════════════════════════
-//  TYPEWRITER
-// ══════════════════════════════════════════
-const PHRASES=["You are my whole world 💕","She texted first. Best decision ever. 🌸","Happy 24th Birthday, Princess Ekta 💕","Princess Ekta & Piglet — forever 💕","You are my favourite everything ✨","Getting more beautiful every single day 🌸","I would wait 20 minutes for you every time 💕"];
+const PHRASES=["You are my whole world 💕","She texted first. Best decision ever. 🌸","Happy 24th Birthday, Princess Ekta 💕","Princess Ekta & Piglet, forever 💕","You are my favourite everything ✨","Getting more beautiful every single day 🌸","I would wait 20 minutes for you every time 💕"];
 let tpIdx=0;
 function cycleTypewriter(){
   const el=document.getElementById("typer");
@@ -1007,9 +948,6 @@ function cycleTypewriter(){
   setTimeout(cycleTypewriter,5200);
 }
 
-// ══════════════════════════════════════════
-//  BUILD ALL
-// ══════════════════════════════════════════
 function buildAll(){
   if(window._built) return;
   window._built=true;
@@ -1017,49 +955,10 @@ function buildAll(){
   buildPersonality();buildCake();buildBucket();
   buildScratch();buildCompWall();buildGallery();buildStripSel();
   buildMood();initMemory();drawWheel();loadWYR();initQuiz();
-  if(SLIDESHOW_COUNT>0){
-    const indices=Array.from({length:SLIDESHOW_COUNT},(_,i)=>i+135);
-    // Resolve first 30 immediately so slideshow can start fast
-    const head=indices.slice(0,30);
-    const tail=indices.slice(30);
-    Promise.all(head.map(idx=>resolveSlideshowItem(idx))).then(headItems=>{
-      SLIDESHOW_PHOTOS = headItems.filter(Boolean);
-      if(!SLIDESHOW_PHOTOS.length) SLIDESHOW_PHOTOS=["photo/image_135.png"];
-      ssInit();
-      // resolve the rest in background, append as they're found
-      Promise.all(tail.map(idx=>resolveSlideshowItem(idx))).then(tailItems=>{
-        tailItems.filter(Boolean).forEach(item=>{
-          SLIDESHOW_PHOTOS.push(item);
-          ssPhotos.push(item); // also add to the active slideshow queue so all photos actually play
-        });
-        // update counter to reflect true total
-        const s=ssPhotos[ssIdx];
-        document.getElementById("ss-counter").textContent=`${isVideo(s)?"🎬 Video":"Photo"} ${ssIdx+1} of ${ssPhotos.length}`;
-      });
-    });
-  } else {
-    detectSlideshowMedia().then(media=>{
-      SLIDESHOW_PHOTOS = media.length ? media : ["photo/image_135.png"];
-      ssInit();
-    });
-  }
+  ssPhotos = shuffle([...ALL_PHOTOS]);
+  ssInit();
 }
 
-async function resolveSlideshowItem(idx){
-  const img=await findImageExt(idx);
-  if(img) return img;
-  const mp4ok=await checkVideoExists(`video/video_${idx}.mp4`);
-  if(mp4ok) return `video/video_${idx}.mp4`;
-  const webmok=await checkVideoExists(`video/video_${idx}.webm`);
-  if(webmok) return `video/video_${idx}.webm`;
-  const movok=await checkVideoExists(`video/video_${idx}.mov`);
-  if(movok) return `video/video_${idx}.mov`;
-  return null;
-}
-
-// ══════════════════════════════════════════
-//  PERSONALITY
-// ══════════════════════════════════════════
 function buildPersonality(){
   const g=document.getElementById("pers-grid");
   PERSONALITY.forEach((p,i)=>{
@@ -1070,9 +969,6 @@ function buildPersonality(){
   });
 }
 
-// ══════════════════════════════════════════
-//  CAKE
-// ══════════════════════════════════════════
 let blownCt=0;
 function buildCake(){
   const row=document.getElementById("candle-row");row.innerHTML="";blownCt=0;
@@ -1095,7 +991,6 @@ function buildCake(){
 }
 async function sendCakeWish(){
   const w=document.getElementById("wish-text").value.trim();if(!w)return;
-  // send wish to Aaditya's email via FormSubmit (free, no backend needed)
   try{
     await fetch("https://formsubmit.co/ajax/adi123rau456@gmail.com",{
       method:"POST",
@@ -1113,9 +1008,6 @@ async function sendCakeWish(){
   spawn(["🌠","⭐","💫","✨"],50,3000);confetti({particleCount:100,spread:100});
 }
 
-// ══════════════════════════════════════════
-//  BUCKET LIST
-// ══════════════════════════════════════════
 let _lsData=[];try{_lsData=JSON.parse(localStorage.getItem("bd_ekta")||"[]");}catch(e){}
 const doneSet=new Set(_lsData);
 function buildBucket(){
@@ -1133,29 +1025,22 @@ function buildBucket(){
   });
 }
 
-// ══════════════════════════════════════════
-//  SCRATCH CARDS
-// ══════════════════════════════════════════
 function buildScratch(){
   const g=document.getElementById("sc-grid");
   SCRATCH_MSGS.forEach(m=>{
-    const d=document.createElement("div");d.className="sc-card";d.style.cursor="pointer";
+    const d=document.createElement("div");d.className="sc-card";
     d.innerHTML=`<div class="sc-cover" id="scc_${m.ico}"><div style="font-size:2.2rem">🎁</div><div style="font-size:10px;color:var(--t2);letter-spacing:.1em">tap to reveal</div></div><div class="sc-msg">${m.ico}<br>${m.msg}</div>`;
     const cover=d.querySelector(".sc-cover");
-    const reveal=()=>{
+    d.onclick=()=>{
       if(cover.classList.contains("gone"))return;
       cover.classList.add("gone");
       confetti({particleCount:22,spread:32,origin:{y:.5},colors:["#f06292","#ffd700"]});
       spawn([m.ico,"💕"],12,600);
     };
-    d.onclick=reveal;
     g.appendChild(d);
   });
 }
 
-// ══════════════════════════════════════════
-//  COMPLIMENT WALL
-// ══════════════════════════════════════════
 function buildCompWall(){
   const w=document.getElementById("comp-wall");
   COMP_WALL.forEach(c=>{
@@ -1168,42 +1053,83 @@ function buildCompWall(){
   });
 }
 
-// ══════════════════════════════════════════
-//  GALLERY
-// ══════════════════════════════════════════
+// ----------------------------------------------------
+// GALLERY WITH INTERSECTION OBSERVER
+// (Fixes 570 photo limit lag entirely)
+// ----------------------------------------------------
 let lbIdx=0,lbImgs=[];
 function buildGallery(){
   const g=document.getElementById("photo-grid");
-  lbImgs=ALL_PHOTOS.slice(0,50);
+  lbImgs = ALL_PHOTOS; // Utilize all photos without freezing
+  
+  // Lazy Loading magic
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        obs.unobserve(img);
+      }
+    });
+  }, { rootMargin: "300px" });
+
   lbImgs.forEach((src,i)=>{
     const d=document.createElement("div");d.className="ph-item";
-    const img=document.createElement("img");img.src=src;img.alt="";img.loading="lazy";img.style.minHeight="60px";
-    img.onerror=()=>d.remove();
+    const img=document.createElement("img");
+    img.dataset.src=src; 
+    img.alt=""; 
+    
+    // Auto-fallback to JPG if PNG fails
+    img.onerror=function(){
+        if(this.src.endsWith('.png')){
+            this.src = this.src.replace('.png', '.jpg');
+        } else {
+            d.style.display="none"; // Remove silently if neither exists
+        }
+    };
+    
+    observer.observe(img);
+
     const ov=document.createElement("div");ov.className="ph-ov";
-    ov.innerHTML=`<span class="ph-cap">${CAPS[i]||"our moment 💕"}</span>`;
+    ov.innerHTML=`<span class="ph-cap">${CAPS[i%CAPS.length] || "our moment 💕"}</span>`;
     d.appendChild(img);d.appendChild(ov);
-    d.onclick=()=>{lbIdx=i;document.getElementById("lb-img").src=src;document.getElementById("lightbox").classList.add("show");};
+    d.onclick=()=>{lbIdx=i;document.getElementById("lb-img").src=img.src;document.getElementById("lightbox").classList.add("show");};
     g.appendChild(d);
   });
 }
+
 function closeLb(){document.getElementById("lightbox").classList.remove("show");}
 function lbBg(e){if(e.target===document.getElementById("lightbox"))closeLb();}
-function lbNav(d){lbIdx=(lbIdx+d+lbImgs.length)%lbImgs.length;document.getElementById("lb-img").src=lbImgs[lbIdx];}
+function lbNav(d){
+    lbIdx=(lbIdx+d+lbImgs.length)%lbImgs.length;
+    let nextSrc = lbImgs[lbIdx];
+    // Simple fallback check for lightbox
+    const testImg = new Image();
+    testImg.onload = () => document.getElementById("lb-img").src = nextSrc;
+    testImg.onerror = () => { document.getElementById("lb-img").src = nextSrc.replace('.png', '.jpg'); };
+    testImg.src = nextSrc;
+}
 document.addEventListener("keydown",e=>{if(e.key==="ArrowRight")lbNav(1);if(e.key==="ArrowLeft")lbNav(-1);if(e.key==="Escape")closeLb();});
 
-// ══════════════════════════════════════════
-//  PHOTO STRIP
-// ══════════════════════════════════════════
 let stripPicked=[];
 function buildStripSel(){
   const s=document.getElementById("strip-sel");s.innerHTML="";stripPicked=[];
-  ALL_PHOTOS.slice(0,20).forEach(src=>{
+  // Pick random 20 for photo booth
+  const stripPool = shuffle([...ALL_PHOTOS]).slice(0, 20);
+  stripPool.forEach(src=>{
     const d=document.createElement("div");d.className="strip-thumb";
-    const img=document.createElement("img");img.src=src;img.alt="";img.loading="lazy";img.onerror=()=>d.remove();
+    const img=document.createElement("img");
+    img.loading="lazy";
+    img.src=src; 
+    img.alt=""; 
+    img.onerror=function(){
+        if(this.src.endsWith('.png')) this.src = this.src.replace('.png', '.jpg');
+        else d.remove();
+    };
     d.appendChild(img);
     d.onclick=()=>{
-      if(d.classList.contains("picked")){d.classList.remove("picked");stripPicked=stripPicked.filter(x=>x!==src);}
-      else if(stripPicked.length<4){d.classList.add("picked");stripPicked.push(src);}
+      if(d.classList.contains("picked")){d.classList.remove("picked");stripPicked=stripPicked.filter(x=>x!==img.src);}
+      else if(stripPicked.length<4){d.classList.add("picked");stripPicked.push(img.src);}
       document.getElementById("strip-hint").textContent="Pick 4 photos to create a retro strip! ("+stripPicked.length+"/4)";
     };
     s.appendChild(d);
@@ -1227,9 +1153,6 @@ function clearStrip(){
   document.getElementById("strip-result").style.display="none";
 }
 
-// ══════════════════════════════════════════
-//  MOOD RING
-// ══════════════════════════════════════════
 function buildMood(){
   const g=document.getElementById("mood-grid");
   MOODS.forEach(m=>{
@@ -1247,9 +1170,6 @@ function buildMood(){
   });
 }
 
-// ══════════════════════════════════════════
-//  CONFESS-O-METER
-// ══════════════════════════════════════════
 function updateConfess(){
   const v=parseInt(document.getElementById("conf-slider").value);
   document.getElementById("conf-num").textContent=v+1;
@@ -1257,9 +1177,6 @@ function updateConfess(){
 }
 setTimeout(()=>{if(document.getElementById("conf-disp"))document.getElementById("conf-disp").textContent=CONFESSIONS[0];},600);
 
-// ══════════════════════════════════════════
-//  COMPLIMENT MACHINE
-// ══════════════════════════════════════════
 let compIdx=0;
 function newCompliment(){
   const el=document.getElementById("comp-disp");const ico=document.getElementById("comp-ico");
@@ -1273,9 +1190,6 @@ function newCompliment(){
   },300);
 }
 
-// ══════════════════════════════════════════
-//  REASONS COUNTER
-// ══════════════════════════════════════════
 let reasonCt=0;
 function addReason(){
   reasonCt++;
@@ -1284,20 +1198,20 @@ function addReason(){
   confetti({particleCount:14,spread:40,origin:{y:.7}});
 }
 
-// ══════════════════════════════════════════
-//  MEMORY GAME
-// ══════════════════════════════════════════
 let mFl=[],mMa=0,mFlips=0,mCan=true;
 function initMemory(){
   const g=document.getElementById("mem-grid");g.innerHTML="";
   mFl=[];mMa=0;mFlips=0;mCan=true;
   document.getElementById("flip-c").textContent="0";
   document.getElementById("match-c").textContent="0";
-  const pairs=ALL_PHOTOS.filter((_,i)=>i%3===0).sort(()=>Math.random()-.5).slice(0,6);
-  const cards=[...pairs,...pairs].map((src,i)=>({src,id:i%6})).sort(()=>Math.random()-.5);
+  
+  // Truly random pairs for memory game
+  const pairs = shuffle([...ALL_PHOTOS]).slice(0,6);
+  const cards = shuffle([...pairs, ...pairs].map((src, i) => ({src, id: i % 6})));
+  
   cards.forEach(c=>{
     const d=document.createElement("div");d.className="mem-card";d.dataset.id=c.id;
-    d.innerHTML=`<div class="mem-front">🩷</div><div class="mem-back"><img src="${c.src}" alt="" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--pk),var(--lav))';this.parentElement.innerHTML='<div style=\\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;\\'>💕</div>'"></div>`;
+    d.innerHTML=`<div class="mem-front">🩷</div><div class="mem-back"><img src="${c.src}" alt="" onerror="if(this.src.endsWith('.png')){this.src=this.src.replace('.png','.jpg');}else{this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--pk),var(--lav))';this.parentElement.innerHTML='<div style=\\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;\\'>💕</div>'}"></div>`;
     d.onclick=()=>{
       if(!mCan||d.classList.contains("flipped")||d.classList.contains("matched"))return;
       d.classList.add("flipped");mFl.push(d);mFlips++;
@@ -1319,9 +1233,6 @@ function initMemory(){
   });
 }
 
-// ══════════════════════════════════════════
-//  SPIN WHEEL
-// ══════════════════════════════════════════
 let wheelAngle=0,spinning=false;
 const WC=["#e91e8c","#f06292","#a855f7","#fbbf24","#f87171","#60a5fa","#34d399","#fb923c","#818cf8","#e879f9"];
 function drawWheel(){
@@ -1342,11 +1253,15 @@ function drawWheel(){
   ctx.beginPath();ctx.arc(cx,cy,18,0,2*Math.PI);
   ctx.fillStyle="#fff";ctx.fill();ctx.strokeStyle=WC[0];ctx.lineWidth=3;ctx.stroke();
 }
+
 function spinWheel(){
   if(spinning)return;spinning=true;
   document.getElementById("spin-result").style.display="none";
   const btn=document.getElementById("spin-btn");btn.disabled=true;
-  let speed=0.38;
+  
+  // Randomizing spin initial speed so results are truly varied
+  let speed = 0.3 + Math.random() * 0.15; 
+  
   function frame(){
     speed*=0.986;wheelAngle=(wheelAngle+speed)%(2*Math.PI);
     drawWheel();
@@ -1354,7 +1269,6 @@ function spinWheel(){
     else{
       spinning=false;btn.disabled=false;
       const arc=2*Math.PI/SPIN_DATES.length;
-      // pointer ▼ is at the TOP of the canvas = -π/2 in canvas coords
       let relAngle=(-Math.PI/2-wheelAngle)%(2*Math.PI);
       if(relAngle<0)relAngle+=2*Math.PI;
       const landed=Math.floor(relAngle/arc)%SPIN_DATES.length;
@@ -1369,9 +1283,6 @@ function spinWheel(){
   requestAnimationFrame(frame);
 }
 
-// ══════════════════════════════════════════
-//  WYR
-// ══════════════════════════════════════════
 let wyrIdx=0,wyrDone=false;
 function loadWYR(){
   wyrDone=false;const w=WYR_QS[wyrIdx];
@@ -1395,9 +1306,6 @@ function pickWYR(c){
 }
 function nextWYR(){wyrIdx=(wyrIdx+1)%WYR_QS.length;loadWYR();}
 
-// ══════════════════════════════════════════
-//  QUIZ
-// ══════════════════════════════════════════
 let qi=0,qscore=0,qans=false;
 function initQuiz(){qi=0;qscore=0;qans=false;document.getElementById("q-active").style.display="block";document.getElementById("q-end").style.display="none";loadQ();}
 function loadQ(){
@@ -1436,9 +1344,6 @@ function endQuiz(){
   if(qscore===QUIZ_QS.length){confetti({particleCount:150,spread:120});bigPop("PERFECT SCORE! 🎉💕");}
 }
 
-// ══════════════════════════════════════════
-//  PHONE KEYPAD
-// ══════════════════════════════════════════
 const CORRECT_NUM = "9866660557";
 const ROASTS = [
   "bruh 💀","duhhh 😐","wth are you doing 😭","SERIOUSLY?? 💀",
@@ -1506,86 +1411,11 @@ function dialReset(){
   document.getElementById("dial-hint").textContent="Can you type his number from memory? 💕";
 }
 
-// ══════════════════════════════════════════
-//  SLIDESHOW MEDIA DETECTION
-// ══════════════════════════════════════════
-// Detects both images (image_135.png) and videos (video_101.mp4 / video_101.webm)
-// starting from index 101. Files are probed in batches; first missing number stops.
-function checkImageExists(src){
-  return new Promise(resolve=>{
-    const img=new Image();
-    img.onload=()=>resolve(true);
-    img.onerror=()=>resolve(false);
-    img.src=src;
-  });
-}
-function checkVideoExists(src){
-  return new Promise(resolve=>{
-    const v=document.createElement("video");
-    v.onloadedmetadata=()=>resolve(true);
-    v.onerror=()=>resolve(false);
-    v.preload="metadata";
-    v.src=src;
-    setTimeout(()=>resolve(false),800);
-  });
-}
-function isVideo(src){return /\.(mp4|webm|mov)$/i.test(src);}
-
-const _imgExtCache={};
-async function findImageExt(idx){
-  if(_imgExtCache[idx]!==undefined) return _imgExtCache[idx];
-  for(const ext of ["jpg","jpeg","png","webp","gif"]){
-    const src=`photo/image_${idx}.${ext}`;
-    if(await checkImageExists(src)){_imgExtCache[idx]=src;return src;}
-  }
-  _imgExtCache[idx]=null;
-  return null;
-}
-
-async function detectSlideshowMedia(start=135, batchSize=25, maxCheck=2000){
-  const media=[];
-  let i=start;
-  while(i<=maxCheck){
-    const batch=[];
-    for(let j=0;j<batchSize&&(i+j)<=maxCheck;j++){
-      const idx=i+j;
-      // probe image extensions first, then video variants
-      batch.push(
-        findImageExt(idx).then(async img=>{
-          if(img) return img;
-          // try mp4
-          const mp4ok=await checkVideoExists(`video/video_${idx}.mp4`);
-          if(mp4ok) return `video/video_${idx}.mp4`;
-          // try webm
-          const webmok=await checkVideoExists(`video/video_${idx}.webm`);
-          if(webmok) return `video/video_${idx}.webm`;
-          // try mov
-          const movok=await checkVideoExists(`video/video_${idx}.mov`);
-          if(movok) return `video/video_${idx}.mov`;
-          return null;
-        })
-      );
-    }
-    const results=await Promise.all(batch);
-    let stopped=false;
-    for(let j=0;j<results.length;j++){
-      if(results[j]){
-        media.push(results[j]);
-      } else {
-        stopped=true; break;
-      }
-    }
-    if(stopped) break;
-    i+=batchSize;
-  }
-  return media;
-}
-
-// ══════════════════════════════════════════
-//  SLIDESHOW
-// ══════════════════════════════════════════
-let ssPhotos=[],ssIdx=0,ssInterval=null,ssSpeed=700,ssPaused=false,ssActive="a";
-let ssVideoPlaying=false; // true while a video is playing
+// ==========================================
+// LOAD-AWARE SLIDESHOW (Fixes desync issue)
+// ==========================================
+let ssPhotos=[],ssIdx=0,ssTimer=null,ssSpeed=700,ssPaused=false,ssActive="a";
+let ssVideoPlaying=false; 
 const SS_CAPS=["her world 💕","chaos and beauty 🌸","this is her ✨","purely her 💕","the vibe 💫","living her life 🌟","candid queen 📸","just ekta things 💕","no filter needed 🌸","she doesn't even try 💕","iconic 👑","real one 🫶","that's my girl 💕","stunning 🌺","genuine 💖","her laugh 😂","her energy ✨","completely her 🌸","the moment 💕","she's everything 🥰"];
 
 const _ssVid=()=>document.getElementById("ss-video");
@@ -1595,8 +1425,7 @@ const _ssVidProgBar=()=>document.getElementById("ss-video-progress-bar");
 
 function ssShowVideo(src){
   ssVideoPlaying=true;
-  clearInterval(ssInterval);
-  // hide image layers
+  clearTimeout(ssTimer);
   document.getElementById("ss-img-a").className="";
   document.getElementById("ss-img-b").className="";
   const vid=_ssVid();
@@ -1608,7 +1437,7 @@ function ssShowVideo(src){
   _ssVidProg().style.display="block";
   _ssVidProgBar().style.width="0%";
   vid.play().catch(()=>{});
-  // update progress bar
+  
   vid._progInterval=setInterval(()=>{
     if(vid.duration){
       _ssVidProgBar().style.width=((vid.currentTime/vid.duration)*100)+"%";
@@ -1622,29 +1451,42 @@ function ssShowVideo(src){
       _ssVidBadge().style.display="none";
       _ssVidProg().style.display="none";
       ssVideoPlaying=false;
-      // advance to next item
       ssIdx=(ssIdx+1)%ssPhotos.length;
       ssShowItem(ssPhotos[ssIdx]);
-      if(!ssPaused) ssRunInterval();
     },300);
   };
 }
 
 function ssShowImage(src){
-  const next=ssPhotos[(ssIdx+1)%ssPhotos.length];
   const cur=ssActive==="a"?"b":"a";
   const prev=ssActive;
   const imgCur=document.getElementById("ss-img-"+cur);
   const imgPrev=document.getElementById("ss-img-"+prev);
-  imgCur.src=src;
-  const show=()=>{
+  
+  // Pause the timer entirely until the image finishes loading
+  clearTimeout(ssTimer); 
+  
+  imgCur.onload = () => {
     imgCur.className="ss-active"; imgPrev.className="";
-    ssActive=cur; ssStep();
-    if(!isVideo(next)) document.getElementById("ss-img-"+prev).src=next;
+    ssActive=cur; 
+    ssStep();
+    if(!ssPaused) ssRunInterval(); // Start next cycle ONLY when ready
   };
-  if(imgCur.complete&&imgCur.naturalWidth) show();
-  else imgCur.onload=show;
+  
+  // Fallback if missing
+  imgCur.onerror = () => {
+      if(imgCur.src.endsWith('.png')){
+          imgCur.src = imgCur.src.replace('.png', '.jpg');
+      } else {
+          // If completely broken, immediately skip to next
+          ssNext();
+      }
+  };
+  
+  imgCur.src=src;
 }
+
+function isVideo(src){return /\.(mp4|webm|mov)$/i.test(src);}
 
 function ssShowItem(src){
   if(isVideo(src)){
@@ -1656,10 +1498,8 @@ function ssShowItem(src){
 }
 
 function ssInit(){
-  ssPhotos=[...SLIDESHOW_PHOTOS].sort(()=>Math.random()-.5);
   if(!ssPhotos.length){ssPhotos=["photo/image_135.png"];}
   ssIdx=0; ssActive="a"; ssPaused=false; ssVideoPlaying=false;
-  // reset video
   const vid=_ssVid();
   vid.pause(); vid.src=""; vid.className="";
   _ssVidBadge().style.display="none";
@@ -1667,7 +1507,6 @@ function ssInit(){
   document.getElementById("ss-img-a").className="ss-active";
   document.getElementById("ss-img-b").className="";
   ssShowItem(ssPhotos[0]);
-  ssRunInterval();
 }
 
 function ssStep(){
@@ -1685,14 +1524,16 @@ function ssStep(){
 }
 
 function ssNext(){
-  if(ssVideoPlaying) return; // video controls its own advancement
+  if(ssVideoPlaying) return; 
   ssIdx=(ssIdx+1)%ssPhotos.length;
   ssShowItem(ssPhotos[ssIdx]);
 }
 
 function ssRunInterval(){
-  clearInterval(ssInterval);
-  if(!ssPaused && !ssVideoPlaying && ssPhotos.length) ssInterval=setInterval(ssNext,ssSpeed);
+  clearTimeout(ssTimer);
+  if(!ssPaused && !ssVideoPlaying && ssPhotos.length) {
+      ssTimer = setTimeout(ssNext, ssSpeed);
+  }
 }
 
 function ssToggle(){
@@ -1707,14 +1548,12 @@ function ssToggle(){
 function ssFaster(){ssSpeed=Math.max(200,ssSpeed-150);ssRunInterval();}
 function ssSlower(){ssSpeed=Math.min(2000,ssSpeed+200);ssRunInterval();}
 function ssRandom(){
-  // stop any playing video first
   const vid=_ssVid();
   if(ssVideoPlaying){vid.pause();clearInterval(vid._progInterval);ssVideoPlaying=false;vid.className="";_ssVidBadge().style.display="none";_ssVidProg().style.display="none";}
-  ssPhotos=[...SLIDESHOW_PHOTOS].sort(()=>Math.random()-.5);
+  ssPhotos=shuffle([...ALL_PHOTOS]);
   ssIdx=0; spawn(["🔀","💕"],10,500);
-  ssShowItem(ssPhotos[0]); ssRunInterval();
+  ssShowItem(ssPhotos[0]);
 }
-
 
 let kbuf="";
 const UNLOCK_DATE=new Date("2026-06-20T00:00:00");
@@ -1748,7 +1587,6 @@ document.addEventListener("keydown",e=>{
   if(kbuf.length>14)kbuf=kbuf.slice(-14);
 });
 
-// Init wheel on load
 setTimeout(drawWheel,400);
 </script>
 </body>
