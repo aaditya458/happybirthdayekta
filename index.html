@@ -821,8 +821,6 @@ function startApp(){
   document.getElementById("navbar").style.display="block";
   document.getElementById("app").style.display="block";
   document.getElementById("music-toggle").style.display="flex";
-  const m=document.getElementById("bg-music");
-  m.play().then(()=>{document.getElementById("music-toggle").textContent="🔊";}).catch(()=>{});
   tickCD();setInterval(tickCD,1000);
   spawnBalloons();
   
